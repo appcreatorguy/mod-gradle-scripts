@@ -22,7 +22,7 @@ Gradle version `8.5+` is required.
 In your mods `build.gradle` apply all needed plugins like **Shadow** and **Fabric Loom** and then add the following line:
 
 ```groovy
-apply from: "https://raw.githubusercontent.com/henkelmax/mod-gradle-scripts/${mod_gradle_script_version}/mod.gradle"
+apply from: "https://raw.githubusercontent.com/appcreatorguy/mod-gradle-scripts/${mod_gradle_script_version}/mod.gradle"
 ```
 
 ### Properties
@@ -37,7 +37,7 @@ apply from: "https://raw.githubusercontent.com/henkelmax/mod-gradle-scripts/${mo
 | `java_toolchain_version`     | The Java version Gradle should use                                                                                                                                | `String`/`int`                | *Not set by default*               |                                                           |               |
 | `mod_loader`                 | The mod loader                                                                                                                                                    | `String`                      | `fabric`                           | `fabric`, `quilt`, `neoforge`, `forge`, `bukkit`, `paper` |               |
 | `mod_authors`                | The mod authors                                                                                                                                                   | Comma separated `String` list | `Max Henkel`                       |                                                           |               |
-| `minecraft_user_name_prefix` | The in-game player name prefix                                                                                                                                    | `String`                      | `henkelmax`                        |                                                           |               |
+| `minecraft_user_name_prefix` | The in-game player name prefix                                                                                                                                    | `String`                      | `AlphaCerium`                        |                                                           |               |
 | `random_minecraft_user_name` | If the in-game user name should have a random suffix                                                                                                              | `boolean`                     | `true`                             |                                                           |               |
 | `include_mixins`             | Whether Mixin should be added to the mod loader. This only applies to mod loaders that have the abilities to use Mixins and don't already include them by default | `boolean`                     | `false`                            |                                                           |               |
 | `use_mixins`                 | Whether the mod uses Mixins. This is only needed for mod loaders that need the mixins.json registered in the buildscript                                          | `boolean`                     | `false`                            |                                                           |               |
@@ -193,7 +193,7 @@ The Gradle plugin `io.papermc.hangar-publish-plugin` needs to applied before app
 
 You need to set the `MOD_UPDATE_API_KEY` environment variable to be able to upload updates.
 
-You can change the mod upload url by changing `mod_update_url`. Defaults to `https://update.leialoha.dev/`.
+You can change the mod upload url by changing `mod_update_url`. Defaults to `https://update.alphacerium.dev/`.
 
 The Gradle plugin `mod-update` needs to applied before applying this script.
 
